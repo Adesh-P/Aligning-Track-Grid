@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignning Track Grid</title>
+    <style>
+        .container {
+            width: 80%;
+            height: 700px;
+            margin: 100px auto;
+            background-color: pink;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-rows: 50px;
+            justify-content: cente;
+            /* justify-content: start end center stretch space-between space-around space-evenly */
+            align-content: space-betwee;
+            /* align-content: start end center stretch space-between space-around space-evenly */
+            grid-auto-flow: dense;
+            /* place-content: space-between center; */
+        }
+        .item1 {
+            background-color: aquamarine;
+        }
+        .item2 {
+            background-color: skyblue;
+        }
+        .item3 {
+            background-color: goldenrod;
+            grid-row: span 3;
+        }
+        .item4 { 
+            background-color:greenyellow;
+        }
+        .item5 {
+            background-color: peru;
+        }
+        .item6 {
+            background-color: powderblue;
+            grid-column: span 2;
+        }
+        .item7 {
+            background-color: mediumpurple;
+        }
+        .item8 {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Box1</div>
+        <div class="item2">Box2</div>
+        <div class="item3">Box3</div>
+        <div class="item4">Box4</div>
+        <div class="item5">Box5</div>
+        <div class="item6">Box6</div>
+        <div class="item7">Box7</div>
+        <div class="item8">Box8</div>
+    </div>
+</body>
+</html>
